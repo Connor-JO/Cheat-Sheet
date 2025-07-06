@@ -1,0 +1,148 @@
+/*color palette and italic/bold*/
+/*red #d60000  */
+/*yellow #ffd133 */
+/*green #00e72e */
+/*blue #2035ff */
+/*purple #7913f5 */
+/*pink #fc10ff */
+
+html {
+    color: #f6fafd;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/*Navigation panel adjustments*/
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #202127;
+    border: 1px solid #f6fafd;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+}
+
+nav a {
+    font-size: 18px;
+    color: #fc10ff;
+    border: 1px solid #f6fafd;
+    padding: 20px 88px;
+}
+
+/*Body adjustments*/
+
+body {
+    width: 100%;
+    background-color: #0e0f14;
+    position: relative;
+    margin: 60px auto;
+}
+
+/*Intro adjustments*/
+
+.intro {
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #d60000;
+    font-size: 40px;
+}
+
+.introp {
+    text-align: center;
+    color: #ffd133;
+    font-size: 28px;
+    letter-spacing: 1.2;
+}
+
+/*Adjusting all tables and table titles*/
+
+table {
+    margin: 20px auto;
+    border: 1px solid #f6fafd;
+}
+
+h2 {
+    margin: 0 auto;
+    text-align: center;
+    color: #d60000;
+}
+
+/*adjusting the contents of the tables*/
+
+thead {
+    border: 1px solid #f6fafd;
+}
+
+th {
+    border: 1px solid #f6fafd;
+}
+
+.subtitle {
+    border: 1px solid #f6fafd;
+}
+
+.tag {
+    color: #00e72e;
+    border: 1px solid #f6fafd;
+    padding: 2px 5px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.name {
+    color: #2035ff;
+    border: 1px solid #f6fafd;
+    padding: 2px 5px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.description {
+    color: #ffd133;
+    border: 1px solid #f6fafd;
+    padding: 2px 5px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.selfclosing {
+    color: #7913f5;
+    border: 1px solid #f6fafd;
+    padding: 2px 5px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+/*Adjusting the footer*/
+
+footer {
+    background-color:#0e0f14;
+    width: 100%;
+    border: 1px solid #f6fafd;
+    margin: 0 auto;
+}
+
+footer p {
+    color:#ffd133;
+    font-size: 20px;
+    text-align: center;
+}

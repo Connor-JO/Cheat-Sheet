@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html>
+
+<!--head including title and link to stylesheet-->
+    <head>
+        <title>CSS and HTML Cheat Sheet</title>
+        <link href="styles.css" type="text/CSS" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    </head>
+
+    <!--Body-->
+    <body>
+
+        <!--nav panel-->
+    <nav>
+        <!--ul for table cheats, semantic html cheats and bottom of page-->
+        <ul>
+            <li><a href="#HTMLTableCheats">HTML Table Cheats</a></li>
+            <li><a href="#Semantic-Cheats">Semantic HTML Cheats</a></li>
+            <li><a href="#CssDisplay">CSS Display Cheats</a></li>
+            <li><a href="#CssPosition">CSS Position Cheats</a></li>
+            <li><a href="#bottom">More Information</a></li>
+        </ul>
+    </nav>
+
+        <!--h1 for the title of the page and p for description-->
+        <div class="intro">
+            <h1 class="bold">Connor's HTML and CSS Cheat Sheet</h1>
+            <p class="introp">Welcome, my name is Connor and I am a young and aspiring Front End Developer. This cheat sheet is one of my first projects and also an actual cheat sheet. 
+            Thank you for checking out my Cheat Sheet! I hope it helps you as much as it helps me.
+            </p>
+        </div>
+
+        <!--section to seperate the tables from the intro-->
+        <section>
+
+            <!--The HTML Table Cheats Table-->
+            <div id="HTMLTableCheats">
+                <h2>HTML Table Cheats</h2>
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Self Closing?</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                            <tr class="subtitle">
+                                <th colspan="4">Tags</th>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;table&gt;</td>
+                                <td class="name">Table</td>
+                                <td class="description">The Container for a table</td>
+                                <td class="selfclosing">No</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;thead&gt;</td>
+                                <td class="name">Table Head</td>
+                                <td class="description">The container for the Table Head rows and columns</td>
+                                <td class="selfclosing">No</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;tbody&gt;</td>
+                                <td class="name">Table Body</td>
+                                <td class="description">The container for the Table Body rows and columns</td>
+                                <td class="selfclosing">No</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;tfoot&gt;</td>
+                                <td class="name">Table Footer</td>
+                                <td class="description">The container for the Table Foot rows and columns</td>
+                                <td class="selfclosing">No</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;tr&gt;</td>
+                                <td class="name">Table Row</td>
+                                <td class="description"></td>
+                                <td class="selfclosing">No</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;th&gt;</td>
+                                <td class="name">Table Heading Cell</td>
+                                <td class="description">Defines a header cell in a table</td>
+                                <td class="selfclosing">No</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;td&gt;</td>
+                                <td class="name">Table Data Cell</td>
+                                <td class="description">Defines a cell in a table containing data</td>
+                                <td class="selfclosing">No</td>
+                            </tr>
+                        
+                        <tr class="subtitle">
+                            <th colspan="4">Attributes</th>
+                        </tr>
+                        <tr>
+                            <td class="tag">colspan</td>
+                            <td class="name">Column Span</td>
+                            <td class="description">Specifies the number of columns a cell should span</td>
+                            <td class="selfclosing">N/A</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">rowspan</td>
+                            <td class="name">Row Span</td>
+                            <td class="description">Specifies the number of rows a cell should span</td>
+                            <td class="selfclosing">N/A</td>
+                        </tr>
+                        
+                    </tbody>
+
+                </table>
+                </div>
+
+                <!--The Semantic HTML Cheats Table-->
+                <div id="Semantic-Cheats">
+                    <h2>Semantic HTML Cheats</h2>
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Self Closing?</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td class="tag">&lt;address&gt;</td>
+                            <td class="name">Address</td>
+                            <td class="description">Represents the contact information of a business or person</td>
+                            <td class="selfclosing">No</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;article&gt;</td>
+                            <td class="name">Article</td>
+                            <td class="description">Represents a part of a page which is self-contained and could be published elsewhere. Common uses include blog posts or magazine articles</td>
+                            <td class="selfclosing">No</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;aside&gt;</td>
+                            <td class="name">Aside</td>
+                            <td class="description">Represents a part of a page which is relevant to the current content, but not a part of it directly.
+                                It can be used for related links, for clarifying a statement from the current article, or even for advertising meant for the current page</td>
+                            <td class="selfclosing">No</td>
+                        </tr>
+                            <td class="tag">&lt;details&gt;</td>
+                            <td class="name">Details</td>
+                            <td class="description">Encapsulates the &lt;summary&gt; element and any additional details which are only visible when the element is in an open state</td>
+                            <td class="selfclosing">No</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;figcaption&gt;</td>
+                            <td class="name">Figure Caption</td>
+                            <td class="description">Describes the media encapsulated within the &lt;figure&gt; element</td>
+                            <td class="selfclosing">No</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;figure&gt;</td>
+                            <td class="name">Figure</td>
+                            <td class="description">Encapsulates media such as an image, diagram, or code snippet</td>
+                            <td class="selfclosing">No</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;footer&gt;</td>
+                            <td class="name">Footer</td>
+                            <td class="description">Represents a part of a page which is meant to be at the end of a completed block of content. Common uses include copyright information for the page or additional links to relevant pages</td>
+                            <td class="selfclosing">No</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;header&gt;</td>
+                            <td class="name">Header</td>
+                            <td class="description">Creates a container for introductory content or navigational aids in a document or section</td>
+                            <td class="selfclosing">No</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;main&gt;</td>
+                            <td class="name">Main</td>
+                            <td class="description">Represents the primary content within the body element of the web page</td>
+                            <td class="selfclosing">No</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;mark&gt;</td>
+                            <td class="name">Mark</td>
+                            <td class="description">Represents part of a text that should be rendered as marked or highlighted</td>
+                            <td class="selfclosing">No</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;meter&gt;</td>
+                            <td class="name">Meter</td>
+                            <td class="description">Represents either a fractional value or a scalar value within a known range</td>
+                            <td class="selfclosing">No</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;nav&gt;</td>
+                            <td class="name">Navigation</td>
+                            <td class="description">Defines a block of navigation links such as menus and tables of contents</td>
+                            <td class="selfclosing">No</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;progress&gt;</td>
+                            <td class="name">Progress Bar</td>
+                            <td class="description">Used to display a progress bar</td>
+                            <td class="selfclosing">No</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;rb&gt;</td>
+                            <td class="name">RB</td>
+                            <td class="description">Representing the base component in ruby annotations for East Asian text, its use has declined and is now deprecated</td>
+                            <td class="selfclosing">No</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;rt&gt;</td>
+                            <td class="name">RT</td>
+                            <td class="description">Provides support for East Asian typography such as translations, pronunciation, or transliteration</td>
+                            <td class="selfclosing">No</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;ruby&gt;</td>
+                            <td class="name">Ruby</td>
+                            <td class="description">Represents small annotations usually used for showing pronunciation of Japanese and East Asian characters</td>
+                            <td class="selfclosing">No</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;section&gt;</td>
+                            <td class="name">Section</td>
+                            <td class="description">Defines elements in a document, such as chapters, headings, or any other area of the document with the same theme</td>
+                            <td class="selfclosing">No</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;summary&gt;</td>
+                            <td class="name">Summary</td>
+                            <td class="description">Acts as a label for the <details> element and reveals additional information when clicked</td>
+                            <td class="selfclosing">No</td>
+                        </tr>
+                        <tr>
+                            <td class="tag">&lt;time&gt;</td>
+                            <td class="name">Time</td>
+                            <td class="description">Represents a time-related piece of information and can take a datetime attribute that makes it machine-readable</td>
+                            <td class="selfclosing">No</td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <!--CSS Display cheats table-->
+                <div id="CssDisplay">
+
+                    <h2>CSS Display Cheat Sheet</h2>
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="tag">display: block;</td>
+                                <td class="name">Block</td>
+                                <td class="description">Elements with display: block; are rendered as block-level elements. They create a line break after the element and occupy the full width of their parent container</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">display: inline;</td>
+                                <td class="name">Inline</td>
+                                <td class="description">Elements with display: inline; are rendered as inline elements. They don’t create line breaks and occupy only the necessary width and height based on their content</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">display: inline-block;</td>
+                                <td class="name">Inline Block</td>
+                                <td class="description">Elements with display: inline-block; are rendered as inline-level block elements. They behave like inline elements but allow you to set width, height, padding, and margins</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">display: none;</td>
+                                <td class="name">None</td>
+                                <td class="description">Elements with display: none; are not rendered and are completely hidden from the page. They don’t take up any space in the document flow</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">display: flex;</td>
+                                <td class="name">Flex</td>
+                                <td class="description">Elements with display: flex; create a flex container, allowing you to build flexible and responsive layouts. Flex items inside the container can be positioned and resized using flexbox properties</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">display: grid;</td>
+                                <td class="name">Grid</td>
+                                <td class="description">Elements with display: grid; create a grid container that enables you to define rows and columns, creating a two-dimensional grid system.
+                                     Child elements inside the container can be placed in specific cells and adjusted for size and alignment</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <!--CSS Position cheats table-->
+                <div id="CssPosition">
+
+                    <h2>CSS Position Cheats</h2>
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="tag">position: absoulte;</td>
+                                <td class="name">Absolute</td>
+                                <td class="description">Places an element relative to its nearest positioned ancestor or the browser window</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">position: bottom;</td>
+                                <td class="name">Bottom</td>
+                                <td class="description">Specifies the distance of an element from the bottom of the specified position</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">position: fixed;</td>
+                                <td class="name">Fixed</td>
+                                <td class="description">Positions an element relative to the viewport, removing it from the document flow and keeping it fixed during page scrolling</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">position: left;</td>
+                                <td class="name">Left</td>
+                                <td class="description">Specifies the distance of an element from the left of the specified position</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">position: ;</td>
+                                <td class="name">Position</td>
+                                <td class="description">Defines how elements are placed within the document</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">position: relative;</td>
+                                <td class="name">Relative</td>
+                                <td class="description">Positions an element relative to its normal document flow placement, allowing for improved styling control</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">position: right;</td>
+                                <td class="name">Right</td>
+                                <td class="description">Specifies the distance of an element from the right of the specified position</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">position: static;</td>
+                                <td class="name">Static</td>
+                                <td class="description">Positions an element according to the normal flow of the page but not in any special way</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">position: sticky;</td>
+                                <td class="name">Sticky</td>
+                                <td class="description">Defines an element that toggles between relative and fixed positions depending on the scroll position</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">position: top;</td>
+                                <td class="name">Top</td>
+                                <td class="description">Specifies the distance of an element from the top of the specified position</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">z-index: ;</td>
+                                <td class="name">Z Index</td>
+                                <td class="description">Sets the stack order of an element</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+        </section>
+    </body>
+
+    <!--footer-->
+    <footer id="bottom">
+        <p class="bold">Thank you for checking out my cheat sheet made, with VS Code and Codecademy Resource Documents, by yours truly.</p>
+    </footer>
+</html>
