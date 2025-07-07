@@ -42,7 +42,7 @@ nav a {
     font-size: 18px;
     color: #fc10ff;
     border: 1px solid #f6fafd;
-    padding: 20px 88px;
+    padding: auto;
 }
 
 /*Body adjustments*/
@@ -51,7 +51,7 @@ body {
     width: 100%;
     background-color: #0e0f14;
     position: relative;
-    margin: 60px auto;
+    margin: 75px auto;
 }
 
 /*Intro adjustments*/
