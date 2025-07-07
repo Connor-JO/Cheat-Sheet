@@ -32,7 +32,9 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     list-style-type: none;
     padding: 20px;
     margin: 0;
@@ -43,6 +45,10 @@ nav a {
     color: #fc10ff;
     border: 1px solid #f6fafd;
     padding: auto;
+}
+
+nav a:hover {
+    color: #f6fafd;
 }
 
 /*Body adjustments*/
