@@ -45,6 +45,7 @@ nav a {
     color: #fc10ff;
     border: 1px solid #f6fafd;
     padding: auto;
+    text-decoration: none;
 }
 
 nav a:hover {
